@@ -3,6 +3,7 @@ const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const articleRouter = require('./routes/article');
+const userRouter = require('./routes/user');
 
 const app = express();
 dotenv.config();
@@ -21,6 +22,7 @@ app.get('/', async (req, res) => {
     res.send('Client management App');
 })
 
+app.use('/user', userRouter);
 app.use('/articles', articleRouter);
 
 mongoose.connect(URL, () => {
