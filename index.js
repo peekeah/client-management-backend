@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 const URL = process.env.MONGO_URL;
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 app.use('/', async (req, res, next) => {
     next();
