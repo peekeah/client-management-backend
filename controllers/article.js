@@ -12,7 +12,7 @@ exports.getArticles = async (req, res) => {
 };
 
 //Filtering Articles by user
-exports.getArticlesByName = async (req, res) => {
+exports.userArticles = async (req, res) => {
     try {
         const data = await article.find({ name: req.body.name });
         res.send(data);

@@ -16,5 +16,6 @@ exports.login = async (req, res) => {
 };
 
 exports.getUsers = async (req, res) => {
-    res.send({ user: "getUsers" });
+    const response = await user.find({});
+    res.send(response);
 };
