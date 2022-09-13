@@ -11,7 +11,7 @@ Backend for Client Management System.
 | PATCH | /api/articles/update | To update the article |
 
 
-For authentication and authentication of token token need to send in req.headers in variable 'access-token'
+For authentication and authentication of token, token need to send in req.headers in variable 'access-token'
 
 ### Postman Testing Link
 You can use following link to test API using postman
