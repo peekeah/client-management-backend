@@ -7,8 +7,9 @@ Backend for Client Management System.
 | --- | --- | --- |
 | GET | /api/articles| Get all articles |
 | POST | /api/articles/user-articles | Getting all articles of user |
-| POST | /user/login | To login, it will generate the token |
 | PATCH | /api/articles/update | To update the article |
+| POST | /user/login | To login, it will generate the token |
+| POST | /user/all-users | To get all the users |
 
 
 For authentication and authentication of token, token need to send in req.headers in variable 'access-token'
