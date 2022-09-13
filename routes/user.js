@@ -5,7 +5,7 @@ const router = express.Router();
 
 
 router.post("/login", users.login);
-router.get('/', auth.authenticateToken, auth.authorizeUser ,users.getUsers);
+router.get('/all-users', auth.authenticateToken, auth.authorizeUser ,users.getUsers);
 
 module.exports = router;
 
